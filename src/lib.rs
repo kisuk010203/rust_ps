@@ -1,3 +1,7 @@
+pub mod models {
+    pub mod segtree;
+}
+
 mod basics {}
 mod data_structures {
     mod priority_queue {}

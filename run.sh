@@ -1,5 +1,6 @@
 problem_number=$1
 cargo run --bin prob_$problem_number
+cargo run --bin rust_ps submit $(find . -name "prob_$problem_number.rs")
 
 if [ $? -ne 0 ]; then
     echo "No binary target named prob_$problem_number, so will try to add."

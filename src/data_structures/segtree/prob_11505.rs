@@ -1,46 +1,6 @@
 use std::io::{stdin, stdout, BufRead, BufReader, BufWriter, Write};
-struct SegTree {
-    tree: Vec<i64>,
-}
-impl SegTree {
-    fn init(input: Vec<i64>) -> Self {
-        let pow = input.len().next_power_of_two();
-        let mut tree = vec![0; pow << 1];
-        for (idx, num) in input.into_iter().enumerate() {
-            tree[idx + pow] = num;
-        }
-        for idx in (1..pow).rev() {
-            tree[idx] = (tree[idx << 1] * tree[(idx << 1) + 1]) % 1000000007;
-        }
-        Self { tree }
-    }
-    fn update(&mut self, mut idx: usize, new_val: i64) {
-        idx += self.tree.len() >> 1;
-        self.tree[idx] = new_val;
-        while idx > 0 {
-            idx >>= 1;
-            self.tree[idx] = (self.tree[idx << 1] * self.tree[(idx << 1) + 1]) % 1000000007;
-        }
-    }
-    fn query(&self, mut left: usize, mut right: usize) -> i64 {
-        let mut res = 1;
-        left += self.tree.len() >> 1;
-        right += self.tree.len() >> 1;
-        while left <= right {
-            if left & 1 == 1 {
-                res = (res * self.tree[left]) % 1000000007;
-                left += 1;
-            }
-            if right & 1 == 0 {
-                res = (res * self.tree[right]) % 1000000007;
-                right -= 1;
-            }
-            left >>= 1;
-            right >>= 1;
-        }
-        res
-    }
-}
+use rust_ps_lib::models::segtree::SegTree;
+
 fn prob_11505() {
     let (mut reader, mut writer) = (
         BufReader::new(stdin().lock()),
@@ -61,7 +21,8 @@ fn prob_11505() {
         input.push(buf.trim().parse().unwrap());
     }
 
-    let mut segtree = SegTree::init(input);
+    let mut segtree = SegTree::new(n as usize, 1, |a, b| a * b % 1000000007);
+    segtree.build(&input);
     for _ in 0..(m + k) {
         buf.clear();
         reader.read_line(&mut buf).unwrap();
