@@ -1,0 +1,67 @@
+{
+  "C_Cpp_Runner.cCompilerPath": "C:/MinGW/bin/gcc.exe",
+  "C_Cpp_Runner.cppCompilerPath": "C:/MinGW/bin/g++.exe",
+  "C_Cpp_Runner.debuggerPath": "C:/MinGW/bin/gdb.exe",
+  "C_Cpp_Runner.cStandard": "c99",
+  "C_Cpp_Runner.cppStandard": "gnu++14",
+  "C_Cpp_Runner.msvcBatchPath": "",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [
+    "${workspaceFolder}/**"
+  ],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "files.associations": {
+    "iostream": "cpp",
+    "cstdarg": "cpp",
+    "cstdio": "cpp",
+    "ostream": "cpp",
+    "iosfwd": "cpp",
+    "tuple": "cpp",
+    "new": "cpp",
+    "array": "cpp",
+    "memory": "cpp",
+    "span": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  //VSCODE Vim extension errors
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-h>": false,
+    "<C-f>": false,
+    "<C-p>": false,
+    "<C-a>": false,
+    "<C-v>": false,
+    "<C-c>": false,
+  },
+  "vim.useSystemClipboard": true,
+  "files.watcherExclude": {
+    "**/target": true
+  },
+  "cSpell.words": [
+    "segtree"
+  ],
+}
