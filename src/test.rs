@@ -12,10 +12,10 @@ struct Cli {
 }
 
 fn main() {
-    const GREEN: &str = "\x1b[32m"; 
-    const RED: &str = "\x1b[31m"; 
-    const BOLD: &str = "\x1b[1m"; 
-    const RESET: &str = "\x1b[0m"; 
+    const GREEN: &str = "\x1b[32m";
+    const RED: &str = "\x1b[31m";
+    const BOLD: &str = "\x1b[1m";
+    const RESET: &str = "\x1b[0m";
 
     let args = Cli::parse();
 

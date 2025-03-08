@@ -1,5 +1,6 @@
-use rust_ps_lib::models::segtree::SegTree;
 use std::io::{stdin, stdout, BufRead, BufReader, BufWriter, Write};
+
+use rust_ps_lib::models::segtree::SegTree;
 
 fn prob_2042() {
     let (mut reader, mut writer) = (
