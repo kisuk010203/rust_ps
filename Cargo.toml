@@ -1,0 +1,142 @@
+[[bin]]
+name = "prob_1000"
+path = "src/basics/prob_1000.rs"
+
+[[bin]]
+name = "prob_1001"
+path = "./src/basics/prob_1001.rs"
+
+[[bin]]
+name = "prob_1008"
+path = "./src/basics/prob_1008.rs"
+
+[[bin]]
+name = "prob_10814"
+path = "./src/sort/prob_10814.rs"
+
+[[bin]]
+name = "prob_10828"
+path = "./src/data_structures/stack/prob_10828.rs"
+
+[[bin]]
+name = "prob_10845"
+path = "./src/data_structures/queue/prob_10845.rs"
+
+[[bin]]
+name = "prob_10869"
+path = "./src/basics/prob_10869.rs"
+
+[[bin]]
+name = "prob_10998"
+path = "./src/basics/prob_10998.rs"
+
+[[bin]]
+name = "prob_11266"
+path = "./src/graphs/articulation/prob_11266.rs"
+
+[[bin]]
+name = "prob_11279"
+path = "./src/data_structures/priority_queue/prob_11279.rs"
+
+[[bin]]
+name = "prob_11286"
+path = "./src/data_structures/priority_queue/prob_11286.rs"
+
+[[bin]]
+name = "prob_11400"
+path = "./src/graphs/articulation/prob_11400.rs"
+
+[[bin]]
+name = "prob_11505"
+path = "./src/data_structures/segtree/prob_11505.rs"
+
+[[bin]]
+name = "prob_11651"
+path = "./src/sort/prob_11651.rs"
+
+[[bin]]
+name = "prob_11720"
+path = "./src/basics/prob_11720.rs"
+
+[[bin]]
+name = "prob_1181"
+path = "./src/sort/prob_1181.rs"
+
+[[bin]]
+name = "prob_1427"
+path = "./src/sort/prob_1427.rs"
+
+[[bin]]
+name = "prob_16993"
+path = "./src/data_structures/segtree/prob_16993.rs"
+
+[[bin]]
+name = "prob_1715"
+path = "./src/data_structures/priority_queue/prob_1715.rs"
+
+[[bin]]
+name = "prob_1927"
+path = "./src/data_structures/priority_queue/prob_1927.rs"
+
+[[bin]]
+name = "prob_2042"
+path = "./src/data_structures/segtree/prob_2042.rs"
+
+[[bin]]
+name = "prob_2357"
+path = "./src/data_structures/segtree/prob_2357.rs"
+
+[[bin]]
+name = "prob_2557"
+path = "src/basics/prob_2557.rs"
+
+[[bin]]
+name = "prob_2562"
+path = "./src/basics/prob_2562.rs"
+
+[[bin]]
+name = "prob_2751"
+path = "./src/sort/prob_2751.rs"
+
+[[bin]]
+name = "prob_9012"
+path = "./src/data_structures/stack/prob_9012.rs"
+
+[[bin]]
+name = "prob_9498"
+path = "./src/basics/prob_9498.rs"
+
+[[bin]]
+name = "test"
+path = "./src/test.rs"
+
+[package]
+name = "rust_ps"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+assert_cmd = "2.0.14"
+assert_fs = "1.1.1"
+colored = "3.0.0"
+env_logger = "0.11.3"
+indicatif = "0.17.8"
+log = "0.4.21"
+once_cell = "1.19.0"
+predicates = "3.1.0"
+queues = "1.0.2"
+rand = "0.8.5"
+reqwest = { version = "0.11", features = ["json"] }
+scraper = "0.23.1"
+syn = "2.0"
+termcolor = "1.4.1"
+tokio = { version = "1", features = ["full"] }
+
+[lib]
+name = "rust_ps_lib"
+path = "src/lib.rs"
+
+[dependencies.clap]
+version = "4.0"
+features = [ "derive",]
