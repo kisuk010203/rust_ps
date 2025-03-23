@@ -3,8 +3,8 @@ problem_number=$2
 
 case $mode in
     run)
-        cargo run --bin prob_$problem_number
         cargo +nightly fmt
+        cargo run --bin prob_$problem_number
 
         if [ $? -ne 0 ]; then
             echo "No binary target named prob_$problem_number, so will try to add."
