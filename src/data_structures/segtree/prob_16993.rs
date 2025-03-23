@@ -2,7 +2,7 @@ use std::cmp::max;
 use std::i32;
 use std::io::{stdin, stdout, BufRead, BufReader, BufWriter, Write};
 
-use rust_ps_lib::models::parser::parse_into_vector;
+use rust_ps_lib::models::io::parse_into_vector;
 use rust_ps_lib::models::segtree::SegTree;
 
 #[derive(Copy, Clone)]

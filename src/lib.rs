@@ -1,9 +1,10 @@
 pub mod models {
-    pub mod parser;
+    pub mod io;
     pub mod segtree;
 }
 
 mod basics {}
+mod bruteforcing {}
 mod data_structures {
     mod priority_queue {}
     mod queue {}
