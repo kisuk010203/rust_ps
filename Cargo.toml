@@ -59,12 +59,20 @@ name = "prob_11720"
 path = "./src/basics/prob_11720.rs"
 
 [[bin]]
+name = "prob_1174"
+path = "./src/basics/prob_1174.rs"
+
+[[bin]]
 name = "prob_1181"
 path = "./src/sort/prob_1181.rs"
 
 [[bin]]
 name = "prob_1427"
 path = "./src/sort/prob_1427.rs"
+
+[[bin]]
+name = "prob_14391"
+path = "./src/bruteforcing/prob_14391.rs"
 
 [[bin]]
 name = "prob_16993"
@@ -127,15 +135,21 @@ once_cell = "1.19.0"
 predicates = "3.1.0"
 queues = "1.0.2"
 rand = "0.8.5"
-reqwest = { version = "0.11", features = ["json"] }
 scraper = "0.23.1"
 syn = "2.0"
 termcolor = "1.4.1"
-tokio = { version = "1", features = ["full"] }
 
 [lib]
 name = "rust_ps_lib"
 path = "src/lib.rs"
+
+[dependencies.reqwest]
+version = "0.11"
+features = [ "json",]
+
+[dependencies.tokio]
+version = "1"
+features = [ "full",]
 
 [dependencies.clap]
 version = "4.0"
