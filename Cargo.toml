@@ -31,6 +31,10 @@ name = "prob_10998"
 path = "./src/basics/prob_10998.rs"
 
 [[bin]]
+name = "prob_10999"
+path = "./src/data_structures/lazyseg/prob_10999.rs"
+
+[[bin]]
 name = "prob_11266"
 path = "./src/graphs/articulation/prob_11266.rs"
 
@@ -59,20 +63,16 @@ name = "prob_11720"
 path = "./src/basics/prob_11720.rs"
 
 [[bin]]
-name = "prob_1174"
-path = "./src/basics/prob_1174.rs"
-
-[[bin]]
 name = "prob_1181"
 path = "./src/sort/prob_1181.rs"
 
 [[bin]]
-name = "prob_1427"
-path = "./src/sort/prob_1427.rs"
+name = "prob_13925"
+path = "./src/data_structures/lazyseg/prob_13925.rs"
 
 [[bin]]
-name = "prob_14391"
-path = "./src/bruteforcing/prob_14391.rs"
+name = "prob_1427"
+path = "./src/sort/prob_1427.rs"
 
 [[bin]]
 name = "prob_16993"
@@ -117,6 +117,10 @@ path = "./src/basics/prob_9498.rs"
 [[bin]]
 name = "test"
 path = "./src/test.rs"
+
+[[bin]]
+name = "temp"
+path = "./temp.rs"
 
 [package]
 name = "rust_ps"
