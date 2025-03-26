@@ -19,14 +19,20 @@ case $mode in
                 echo "Finished adding binary target prob_$problem_number to Cargo.toml, run the prompt again".
             else 
                 echo "No such rust file named prob_$problem_number.rs exists."
+                
             fi
         fi;;
     submit)
         cargo run --bin rust_ps submit $(find . -name "prob_$problem_number.rs")
         ;;
     test)
+        cargo run --bin rust_ps parse https://www.acmicpc.net/problem/$problem_number
+        ;;
+    clean)
         rm *.in
         rm *.out
-        cargo run --bin rust_ps parse https://www.acmicpc.net/problem/$problem_number
+        ;;
+    fmt)
+        cargo +nightly fmt
         ;;
 esac
