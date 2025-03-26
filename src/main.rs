@@ -1,3 +1,4 @@
+use std::env;
 use std::fs::File;
 use std::io::Write;
 use std::io::{BufRead, BufReader};
@@ -64,6 +65,7 @@ async fn scrape_website(url: &str) -> u32 {
 
 #[tokio::main]
 async fn main() {
+    env::set_var("RUST_BACKTRACE", "1");
     let args = Cli::parse();
 
     match &args.command {
